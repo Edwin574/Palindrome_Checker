@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Palindrome Checker</title>
 </head>
 
@@ -20,16 +21,17 @@
         </div>
         <div class="check-palindrome">
             <form action="">
-            <h2>Wanna check for a palindrome? </h2>
-            <p><strong> Type the word</strong></p>
-            <input required type="text" name="" id="palindrome-text"><br>
-            <button id="check-button" type="submit">check</button><button type="reset">Clear</button>
-            <p id="feedback">Voila`</p>
-        </form>
+                <h2>Wanna check for a palindrome? </h2>
+                <p><strong> Type the word</strong></p>
+                <input required type="text" name="" id="palindrome-text"><br>
+                <div class="buttons">
+                    <button id="check-button" type="submit">Check</button>
+                    <button id="reset-button" type="reset">Clear</button>
+                </div>
+                <p id="feedback">Voila`</p>
+            </form>
         </div>
     </section>
-
-
 
     <script src="./scripts/app.js"></script>
 </body>

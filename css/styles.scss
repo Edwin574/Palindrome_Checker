@@ -1,92 +1,134 @@
 @use "./partials/variables";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-  background-color: blue;
-  color: aliceblue;
+    background-color: blue;
+    color: aliceblue;
 }
+
 h1 {
-  text-align: center;
-  padding-top: 1em;
+    text-align: center;
+    padding-top: 1em;
 }
+
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // background-color: red;
 }
+
 .main-part,
 .check-palindrome {
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 4px navy;
-  margin: 1.3em auto;
-  width: 50%;
-  font-size: 1.2rem;
-  padding: 2em;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: navy;
-}
-.check-palindrome {
-  text-align: center;
-  line-height: 2em;
-  input {
-    width: 50%;
-    padding: 10px;
-    font-size: 1.2rem;
-  }
-  button {
     border-radius: 10px;
-    padding: 0.5em;
+    box-shadow: 2px 2px 2px 4px navy;
+    margin: 1.3em auto;
     width: 50%;
-    margin: 1em;
-    background-color: rgb(137, 137, 235);
     font-size: 1.2rem;
-    transition: 0.4s ease-in-out;
-    cursor: pointer;
-    border: none;
-    &:hover {
-      background-color: aqua;
-    }
-  }
-  #feedback {
-    font-family: Verdana, Tahoma, sans-serif;
-    width: 100%;
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  body {
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: navy;
-  }
-  h2 {
-    color: black;
-  }
+}
 
-  .main-part,
-  .check-palindrome {
-    box-shadow: 2px 2px 2px 4px blue;
-    margin: 1em 0;
-    width: 90%;
-    background-color: blue;
-  }
-  .check-palindrome {
+.check-palindrome {
     text-align: center;
-    line-height: 1.5em;
+    line-height: 2em;
+
     input {
-      width: 100%;
-      font-size: 1.2rem;
+        width: 50%;
+        padding: 10px;
+        font-size: 1.2rem;
     }
+
     button {
-      width: 60%;
-      margin: 1em auto;
-      font-size: 1.1rem;
-      &:hover {
-        background-color: aqua;
-      }
+        border-radius: 10px;
+        padding: 0.5em;
+        width: 50%;
+        margin: 1em;
+        background-color: rgb(137, 137, 235);
+        font-size: 1.2rem;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+            background-color: aqua;
+        }
     }
-  }
+
+    #feedback {
+        font-family: 'Lobster', cursive;
+        width: 100%;
+        font-size: 3rem;
+    }
+
+}
+
+.buttons {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: navy;
+    }
+
+    h2 {
+        color: white;
+        font-weight: bold;
+    }
+
+    .main-part,
+    .check-palindrome {
+        box-shadow: 2px 2px 2px 4px blue;
+        margin: 1em 0;
+        width: 90%;
+        background-color: blue;
+    }
+
+    .check-palindrome {
+        text-align: center;
+        line-height: 1.5em;
+
+        input {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        button {
+            //   width: 60%;
+            flex: 1;
+            // margin: 1em auto;
+            font-size: 1.1rem;
+
+            &:hover {
+                background-color: aqua;
+            }
+        }
+
+        #feedback {
+            font-size: 2.5rem;
+        }
+
+        #check-button {
+            margin-left: .5em;
+        }
+    }
 }

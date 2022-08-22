@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -57,9 +58,23 @@ h1 {
   background-color: aqua;
 }
 .check-palindrome #feedback {
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: "Lobster", cursive;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.success {
+  color: green;
+}
+
+.fail {
+  color: red;
 }
 
 @media screen and (max-width: 768px) {
@@ -67,7 +82,8 @@ h1 {
     background-color: navy;
   }
   h2 {
-    color: black;
+    color: white;
+    font-weight: bold;
   }
   .main-part,
 .check-palindrome {
@@ -85,11 +101,16 @@ h1 {
     font-size: 1.2rem;
   }
   .check-palindrome button {
-    width: 60%;
-    margin: 1em auto;
+    flex: 1;
     font-size: 1.1rem;
   }
   .check-palindrome button:hover {
     background-color: aqua;
+  }
+  .check-palindrome #feedback {
+    font-size: 2.5rem;
+  }
+  .check-palindrome #check-button {
+    margin-left: 0.5em;
   }
 }/*# sourceMappingURL=styles.css.map */
