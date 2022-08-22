@@ -9,7 +9,7 @@ button.addEventListener("click", function (e) {
 
     if (inputValue == "") {
         alert("Enter a a word in the input");
-    }
+    }   
     if (inputValue == reverseString && inputValue !== "") {
         feedback.textContent = `${myInput.value} is a palindrome`
         feedback.classList.add('success')
